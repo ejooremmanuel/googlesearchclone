@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+}
+
+.header .links .header-icon,
+.material-icons {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 14px;
+    font-weight: 400;
+}
+
+.header .links .header-icon:hover {
+    text-decoration: underline;
+}
+
+.header .links .profilepic {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.searchcontainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.searchcontainer .logo {
+    max-width: 300px;
+}
+
+.searchcontainer>form {
+    max-width: 550px;
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.searchcontainer>form .search {
+    width: 100%;
+    border-radius: 24px;
+    padding: 14px 20px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: 0;
+    transition: 0.1s;
+}
+
+.searchcontainer>form .search:focus :active {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.searchbtncontainer {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-gap: 16px;
+}
+
+.searchbtncontainer>button {
+    padding: 10px 8px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 4px;
+    background: #f3f3f3;
+    cursor: pointer;
+    outline: 0;
+    color: #55555555;
+    transition: 0.1s;
+}
+
+.searchbtncontainer>button:hover {
+    background: #CACACA;
+    color: #232323;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background: #f9f9f9;
+}
+
+.footer .links {
+    list-style: none;
+}
+
+.footer .links .link {
+    font-size: 0.8em;
+    display: inline-block;
+    margin: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+.footer .links .link:hover {
+    text-decoration: underline;
+}
+
+.lang {
+    margin-top: 40px;
+    font-size: 0.95em;
+}
+
+.lang>a {
+    text-decoration: none;
+    margin: 4px;
+}
+
+.lang>a:hover {
+    text-decoration: underline;
+}
